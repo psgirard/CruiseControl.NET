@@ -1,17 +1,41 @@
 ﻿namespace ThoughtWorks.CruiseControl.Core.Tasks.Conditions
 {
-    using Exortech.NetReflector;
+   using System;
+   using System.Collections.Generic;
+   using Exortech.NetReflector;
     using ThoughtWorks.CruiseControl.Core.Tasks;
     using ThoughtWorks.CruiseControl.Core.Util;
+   using ThoughtWorks.CruiseControl.Remote;
+   using ThoughtWorks.CruiseControl.Remote.Parameters;
 
     /// <summary>
     /// Provides a base implementation for conditions that provides some common functionality.
     /// </summary>
     public abstract class ConditionBase
-        : ITaskCondition
+        : IParamatisedItem, ITaskCondition
     {
-        #region Public properties
-        #region Description
+       #region Protected fields
+       protected Dictionary<string, string> parameters;
+       protected IEnumerable<ParameterBase> parameterDefinitions;
+       protected IDynamicValue[] myDynamicValues = new IDynamicValue[0];
+       #endregion
+       
+       #region Public properties
+       #region DynamicValues
+       /// <summary>
+       /// The dynamic values to use for the task.
+       /// </summary>
+       /// <version>1.5</version>
+       /// <default>None</default>
+       [ReflectorProperty("dynamicValues", Required = false)]
+       public IDynamicValue[] DynamicValues
+       {
+          get { return myDynamicValues; }
+          set { myDynamicValues = value; }
+       }
+       #endregion
+       
+       #region Description
         /// <summary>
         /// A description of the condition.
         /// </summary>
@@ -31,6 +55,27 @@
         #endregion
 
         #region Public methods
+        #region ApplyParameters()
+        /// <summary>
+        /// Applies the input parameters to the task.
+        /// </summary>
+        /// <param name="parameters">The parameters to apply.</param>
+        /// <param name="parameterDefinitions">The original parameter definitions.</param>
+        public virtual void ApplyParameters(Dictionary<string, string> parametersToApply, IEnumerable<ParameterBase> parameterDefinitionsToUse)
+        {
+           if (myDynamicValues != null)
+           {
+              this.parameters = parametersToApply;
+              this.parameterDefinitions = parameterDefinitionsToUse;
+
+              foreach (IDynamicValue value in myDynamicValues)
+              {
+                 value.ApplyTo(this, parametersToApply, parameterDefinitionsToUse);
+              }
+           }
+        }
+        #endregion
+
         #region Eval()
         /// <summary>
         /// Evals the specified result.
@@ -90,5 +135,16 @@
         }
         #endregion
         #endregion
+
+        internal void ApplyParameters(List<NameValuePair> listParams, IEnumerable<ParameterBase> parameterDefinitions)
+        {
+           Dictionary<string, string> parameters = new Dictionary<string, string>();
+           foreach (var item in listParams)
+           {
+              parameters.Add(item.Name, item.Value);
+           }
+
+           this.ApplyParameters(parameters, parameterDefinitions);
+        }
     }
 }

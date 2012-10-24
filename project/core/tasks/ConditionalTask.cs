@@ -283,6 +283,8 @@
                     commonCondition.Logger = logger;
                 }
 
+                commonCondition.ApplyParameters(result.Parameters, this.parameterDefinitions);
+
                 passed = condition.Eval(result);
                 if (!passed)
                 {

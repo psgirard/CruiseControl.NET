@@ -79,7 +79,9 @@
             var evaluationResult = true;
             foreach (var condition in this.Conditions)
             {
-                evaluationResult = condition.Eval(result);
+               (condition as ConditionBase).ApplyParameters(result.Parameters, parameterDefinitions);
+
+               evaluationResult = condition.Eval(result);
                 if (!evaluationResult)
                 {
                     break;
