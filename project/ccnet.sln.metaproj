@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <MSBuildToolsRoot>C:\Windows\Microsoft.NET\Framework\</MSBuildToolsRoot>
+    <FrameworkSDKRoot>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\</FrameworkSDKRoot>
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <SDK40ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\</SDK40ToolsPath>
+    <SDK35ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\</SDK35ToolsPath>
+    <MSBuildToolsPath32>C:\Windows\Microsoft.NET\Framework\v4.0.30319\</MSBuildToolsPath32>
+    <VCTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\</VCTargetsPath>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Build</AspNetConfiguration>
+    <SolutionDir>E:\GitHub\CruiseControl.NET\project\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>ccnet.sln</SolutionFileName>
+    <SolutionName>ccnet</SolutionName>
+    <SolutionPath>E:\GitHub\CruiseControl.NET\project\ccnet.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{482EF049-EC0C-4819-B568-75B5F74BDD5B}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E820CF3B-8C5A-4002-BC16-B7818D3D54A8}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D9040862-D7E0-4232-BBD0-CF088706E009}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F93AC24-DF56-469E-91C3-43A2A179C7E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C8043AD9-0F30-4366-A263-E2FC0D6A57A9}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E14EE67D-C24E-4088-B01B-35B742E99E85}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\console\console.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F8113DB9-6C47-4FD1-8A01-655FCF151747}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\core\core.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{4DE3AEAD-FAFB-4D15-A0D7-3A9AAECF08E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\service\service.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1C0B8046-FE79-4845-84B9-369A76F817A3}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\objection\objection.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{CBB2F759-46EB-42DB-BCAD-D7E596A4BC41}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A943CE44-82B8-4000-A0A0-A86FE0051240}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F5896F45-B5BB-4A7B-AD1A-279CE12A0650}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A1B0C773-4779-4A1B-AE4E-8A53D73A8BE5}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E9D3235E-2268-4846-B9EC-DFE24AAA438D}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{99180CA9-1A33-460E-A4D5-6A1E2B03898F}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6984BCE9-51E5-4F73-BD08-E3E545B6B0A7}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{503FFFE2-1711-4319-9951-5FBB7348AE49}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\console\console.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\core\core.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\service\service.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\objection\objection.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Build; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Build</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="WebDashboard" Outputs="@(WebDashboardBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebDashboardBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebDashboard:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="WebDashboard:Rebuild" Outputs="@(WebDashboardBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WebDashboardBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="WebDashboard:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Remote" Outputs="@(RemoteBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="RemoteBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Remote:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Remote:Rebuild" Outputs="@(RemoteBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="RemoteBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Remote:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCTray" Outputs="@(CCTrayBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCTrayBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCTray:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCTray:Rebuild" Outputs="@(CCTrayBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCTrayBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCTray:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="UnitTests" Outputs="@(UnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="UnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="UnitTests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="UnitTests:Rebuild" Outputs="@(UnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="UnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="UnitTests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCTrayLib" Outputs="@(CCTrayLibBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCTrayLibBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCTrayLib:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCTrayLib:Rebuild" Outputs="@(CCTrayLibBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCTrayLibBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCTrayLib:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="console" Outputs="@(consoleBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\console\console.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="consoleBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="console:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\console\console.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="console:Rebuild" Outputs="@(consoleBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\console\console.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="consoleBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="console:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\console\console.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="core" Outputs="@(coreBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\core\core.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="coreBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="core:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\core\core.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="core:Rebuild" Outputs="@(coreBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\core\core.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="coreBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="core:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\core\core.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="service" Outputs="@(serviceBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\service\service.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="serviceBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="service:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\service\service.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="service:Rebuild" Outputs="@(serviceBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\service\service.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="serviceBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="service:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\service\service.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="objection" Outputs="@(objectionBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\objection\objection.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="objectionBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="objection:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\objection\objection.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="objection:Rebuild" Outputs="@(objectionBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\objection\objection.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="objectionBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="objection:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\objection\objection.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Validator" Outputs="@(ValidatorBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="ValidatorBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Validator:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Validator:Rebuild" Outputs="@(ValidatorBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="ValidatorBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Validator:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCCmd" Outputs="@(CCCmdBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCCmdBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCCmd:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCCmd:Rebuild" Outputs="@(CCCmdBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCCmdBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCCmd:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Core_Extensions" Outputs="@(Core_ExtensionsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Core_ExtensionsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Core_Extensions:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Core_Extensions:Rebuild" Outputs="@(Core_ExtensionsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Core_ExtensionsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Core_Extensions:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Communications_Extensions" Outputs="@(Communications_ExtensionsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Communications_ExtensionsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Communications_Extensions:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Communications_Extensions:Rebuild" Outputs="@(Communications_ExtensionsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Communications_ExtensionsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Communications_Extensions:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Build; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MSBuildLogger" Outputs="@(MSBuildLoggerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MSBuildLoggerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MSBuildLogger:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MSBuildLogger:Rebuild" Outputs="@(MSBuildLoggerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MSBuildLoggerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MSBuildLogger:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCNet_CSharpDemos_Plugin" Outputs="@(CCNet_CSharpDemos_PluginBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCNet_CSharpDemos_PluginBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCNet_CSharpDemos_Plugin:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCNet_CSharpDemos_Plugin:Rebuild" Outputs="@(CCNet_CSharpDemos_PluginBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCNet_CSharpDemos_PluginBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCNet_CSharpDemos_Plugin:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCNet_VBDemos_Plugin" Outputs="@(CCNet_VBDemos_PluginBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCNet_VBDemos_PluginBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCNet_VBDemos_Plugin:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="CCNet_VBDemos_Plugin:Rebuild" Outputs="@(CCNet_VBDemos_PluginBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CCNet_VBDemos_PluginBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="CCNet_VBDemos_Plugin:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="PowerShell" Outputs="@(PowerShellBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PowerShellBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="PowerShell:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="PowerShell:Rebuild" Outputs="@(PowerShellBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PowerShellBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="PowerShell:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>

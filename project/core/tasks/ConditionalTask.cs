@@ -43,8 +43,8 @@
         : TaskBase, IConfigurationValidation
     {
         #region Private fields
-        private Dictionary<string, string> parameters;
-        private IEnumerable<ParameterBase> parameterDefinitions;
+        private Dictionary<string, string> parameters = null;
+        private IEnumerable<ParameterBase> parameterDefinitions = null;
         private ItemStatus mainStatus;
         private ItemStatus elseStatus;
         private readonly Dictionary<ITask, ItemStatus> taskStatuses = new Dictionary<ITask, ItemStatus>();

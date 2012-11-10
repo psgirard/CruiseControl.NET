@@ -477,6 +477,9 @@ namespace ThoughtWorks.CruiseControl.Core.Tasks
         #region GetValue()
         private static object GetValue(MemberInfo member, object source)
         {
+            if (member == null || source == null)
+               return null;
+
             object value = null;
 
             var pi = member as PropertyInfo;

@@ -118,6 +118,9 @@
                 case Evaluation.NotEqual:
                     return string.Compare(this.Value1, this.Value2, this.IgnoreCase, CultureInfo.InvariantCulture) != 0;
 
+                case Evaluation.Contains:
+                    return this.Value1.Contains(this.Value2); //, this.Value2, this.IgnoreCase, CultureInfo.InvariantCulture) != 0;
+
                 default:
                     throw new InvalidOperationException("Unhandled evaluation type");
             }
@@ -140,6 +143,11 @@
             /// Are the two values not equal.
             /// </summary>
             NotEqual,
+
+            /// <summary>
+            /// Is the second value is contained within the first value.
+            /// </summary>
+            Contains,
         }
         #endregion
     }

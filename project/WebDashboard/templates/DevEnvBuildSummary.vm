@@ -1,0 +1,79 @@
+<!-- BuildSummary.vm: Start -->
+<html>
+  <head>
+    <script language="javascript">
+        function toggle(showHideDiv) {
+            var ele = document.getElementById(showHideDiv);
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+            } else {
+                ele.style.display = "block";
+            }
+        }
+        function toggle2(showHideDiv, switchTextDiv) {
+            var ele = document.getElementById(showHideDiv);
+            var text = document.getElementById(switchTextDiv);
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+                text.innerHTML = "Show";
+            }
+            else {
+                ele.style.display = "block";
+                text.innerHTML = "Hide";
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <table cellpadding="2" style="border-spacing:2px; border-style:none; border-width:0px;">
+      <tr>
+        <td  colspan="2">
+          <a href="$logUrl" target="_BLANK">$translations.Translate("Click here to view build log in its own page")</a>
+        </td>
+      </tr>
+      <tr >
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-family: Arial,Sans-serif; font-size: 1.7em; font-weight: bold;">Build Summary:</td>
+      </tr>
+      <tr style="background-color: #E0E0EB">
+        <td>Build Status:</td>
+        <td> $buildResult</td>
+      </tr>
+      <tr style="background-color: #D1D1E0">
+        <td>Build Date:</td>
+        <td> $buildDateTime</td>
+      </tr>
+      <tr style="background-color: #E0E0Eb">
+        <td>Number of Built Solutions:</td>
+        <td> $nbSolutions</td>
+      </tr>
+      <tr style="background-color: #D1D1E0">
+        <td>Number of Built Projects:</td>
+        <td> $nbProjects</td>
+      </tr>
+      <tr style="background-color: #E0E0Eb">
+        <td>Number of errors:</td>
+        <td> $nbErrors</td>
+      </tr>
+      <tr style="background-color: #D1D1E0">
+        <td>Number of warnings:</td>
+        <td> $nbWarnings</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="font-family: Arial,Sans-serif; font-size: 1.7em; font-weight: bold;">Build Results, by Configuration:</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    $log
+
+  </body>
+</html>
+<!-- BuildSummary.vm: End -->

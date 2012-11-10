@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore')" />
+  <Import Project="E:\GitHub\CruiseControl.NET\project\before.ccnet.sln.targets" Condition="exists('E:\GitHub\CruiseControl.NET\project\before.ccnet.sln.targets')" />
+  <PropertyGroup Condition=" '$(Configuration)' == '' ">
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == '' ">
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(AspNetConfiguration)' == '') ">
+    <AspNetConfiguration>$(Configuration)</AspNetConfiguration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>E:\GitHub\CruiseControl.NET\project\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>ccnet.sln</SolutionFileName>
+    <SolutionName>ccnet</SolutionName>
+    <SolutionPath>E:\GitHub\CruiseControl.NET\project\ccnet.sln</SolutionPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '2.0'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and ('$(MSBuildToolsVersion)' == '3.5' or '$(MSBuildToolsVersion)' == '3.0')">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == '' and '$(MSBuildToolsVersion)' == '4.0'">v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Build') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{482EF049-EC0C-4819-B568-75B5F74BDD5B}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E820CF3B-8C5A-4002-BC16-B7818D3D54A8}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D9040862-D7E0-4232-BBD0-CF088706E009}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F93AC24-DF56-469E-91C3-43A2A179C7E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C8043AD9-0F30-4366-A263-E2FC0D6A57A9}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E14EE67D-C24E-4088-B01B-35B742E99E85}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\console\console.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F8113DB9-6C47-4FD1-8A01-655FCF151747}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\core\core.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{4DE3AEAD-FAFB-4D15-A0D7-3A9AAECF08E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\service\service.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1C0B8046-FE79-4845-84B9-369A76F817A3}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\objection\objection.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{CBB2F759-46EB-42DB-BCAD-D7E596A4BC41}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A943CE44-82B8-4000-A0A0-A86FE0051240}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F5896F45-B5BB-4A7B-AD1A-279CE12A0650}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A1B0C773-4779-4A1B-AE4E-8A53D73A8BE5}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj" BuildProjectInSolution="True">Build|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E9D3235E-2268-4846-B9EC-DFE24AAA438D}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{99180CA9-1A33-460E-A4D5-6A1E2B03898F}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6984BCE9-51E5-4F73-BD08-E3E545B6B0A7}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{503FFFE2-1711-4319-9951-5FBB7348AE49}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Debug') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{482EF049-EC0C-4819-B568-75B5F74BDD5B}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E820CF3B-8C5A-4002-BC16-B7818D3D54A8}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D9040862-D7E0-4232-BBD0-CF088706E009}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F93AC24-DF56-469E-91C3-43A2A179C7E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C8043AD9-0F30-4366-A263-E2FC0D6A57A9}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E14EE67D-C24E-4088-B01B-35B742E99E85}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\console\console.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F8113DB9-6C47-4FD1-8A01-655FCF151747}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\core\core.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{4DE3AEAD-FAFB-4D15-A0D7-3A9AAECF08E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\service\service.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1C0B8046-FE79-4845-84B9-369A76F817A3}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\objection\objection.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{CBB2F759-46EB-42DB-BCAD-D7E596A4BC41}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A943CE44-82B8-4000-A0A0-A86FE0051240}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F5896F45-B5BB-4A7B-AD1A-279CE12A0650}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A1B0C773-4779-4A1B-AE4E-8A53D73A8BE5}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E9D3235E-2268-4846-B9EC-DFE24AAA438D}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{99180CA9-1A33-460E-A4D5-6A1E2B03898F}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6984BCE9-51E5-4F73-BD08-E3E545B6B0A7}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{503FFFE2-1711-4319-9951-5FBB7348AE49}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <PropertyGroup Condition=" ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ">
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{482EF049-EC0C-4819-B568-75B5F74BDD5B}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\WebDashboard\WebDashboard.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E820CF3B-8C5A-4002-BC16-B7818D3D54A8}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Remote\Remote.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D9040862-D7E0-4232-BBD0-CF088706E009}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTray\CCTray.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F93AC24-DF56-469E-91C3-43A2A179C7E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\UnitTests\UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C8043AD9-0F30-4366-A263-E2FC0D6A57A9}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCTrayLib\CCTrayLib.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E14EE67D-C24E-4088-B01B-35B742E99E85}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\console\console.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F8113DB9-6C47-4FD1-8A01-655FCF151747}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\core\core.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{4DE3AEAD-FAFB-4D15-A0D7-3A9AAECF08E1}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\service\service.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1C0B8046-FE79-4845-84B9-369A76F817A3}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\objection\objection.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{CBB2F759-46EB-42DB-BCAD-D7E596A4BC41}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Validator\Validator.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A943CE44-82B8-4000-A0A0-A86FE0051240}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCCmd\CCCmd.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F5896F45-B5BB-4A7B-AD1A-279CE12A0650}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Core.Extensions\Core.Extensions.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{A1B0C773-4779-4A1B-AE4E-8A53D73A8BE5}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\Communications.Extensions\Communications.Extensions.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{E9D3235E-2268-4846-B9EC-DFE24AAA438D}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\MSBuildLogger\MSBuildLogger.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{99180CA9-1A33-460E-A4D5-6A1E2B03898F}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{6984BCE9-51E5-4F73-BD08-E3E545B6B0A7}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{503FFFE2-1711-4319-9951-5FBB7348AE49}" AbsolutePath="E:\GitHub\CruiseControl.NET\project\PowerShell\PowerShell.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter\*" Condition="'$(ImportByWildcardBeforeSolution)' != 'false' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter')" />
+  <Import Project="E:\GitHub\CruiseControl.NET\project\after.ccnet.sln.targets" Condition="exists('E:\GitHub\CruiseControl.NET\project\after.ccnet.sln.targets')" />
+  <Target Name="Build" />
+  <Target Name="Rebuild" />
+  <Target Name="Clean" />
+  <Target Name="Publish" />
+</Project>
