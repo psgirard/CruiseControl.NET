@@ -55,6 +55,8 @@ namespace ThoughtWorks.CruiseControl.Core
         private Exception sourceControlError;
 
 
+
+
         /// <summary>
         /// Gets the build progress information.	
         /// </summary>
@@ -96,8 +98,10 @@ namespace ThoughtWorks.CruiseControl.Core
                 failureUsers = lastIntegration.FailureUsers;       // Inherit the previous build's failureUser list if it failed.
 
             buildProgressInformation = new BuildProgressInformation(artifactDirectory, projectName);
-            
-            this.label = this.LastIntegration.Label;
+
+            CustomIntegrationProperties = lastIntegration.CustomIntegrationProperties;
+
+            this.Label = this.LastIntegration.Label;
         }
 
         /// <summary>
@@ -108,7 +112,11 @@ namespace ThoughtWorks.CruiseControl.Core
         public string ProjectName
         {
             get { return projectName; }
-            set { projectName = value; }
+            set
+            {
+                projectName = value;
+                UpdateEqualsCompareValue();
+            }
         }
 
         /// <summary>
@@ -141,7 +149,11 @@ namespace ThoughtWorks.CruiseControl.Core
         public string Label
         {
             get { return label; }
-            set { label = value; }
+            set
+            {
+                label = value;
+                UpdateEqualsCompareValue();
+            }
         }
 
         /// <summary>
@@ -254,7 +266,11 @@ namespace ThoughtWorks.CruiseControl.Core
         public DateTime StartTime
         {
             get { return startTime; }
-            set { startTime = value; }
+            set
+            {
+                startTime = value;
+                UpdateEqualsCompareValue();
+            }
         }
 
         /// <summary>
@@ -467,8 +483,42 @@ namespace ThoughtWorks.CruiseControl.Core
             IntegrationResult result = new IntegrationResult(project, workingDirectory, artifactDirectory, initialRequest, IntegrationSummary.Initial);
             result.StartTime = DateTime.Now.AddDays(-1);
             result.EndTime = DateTime.Now;
+
+            result.CustomIntegrationProperties = new List<NameValuePair>();
+
             return result;
         }
+
+
+        public List<NameValuePair> CustomIntegrationProperties { get; set; }
+
+
+        public void UpsertCustomIntegrationProperty(NameValuePair nv)
+        {
+            int ms_index = this.CustomIntegrationProperties.IndexOf(nv);
+
+            if (ms_index < 0)
+            {
+                this.CustomIntegrationProperties.Add(nv);
+            }
+            else
+            {
+                this.CustomIntegrationProperties[ms_index] = nv;
+            }
+        }
+
+        public NameValuePair GetCustomIntegrationProperty(string name)
+        {
+            NameValuePair nv = new NameValuePair(name, string.Empty);
+            int ms_index = this.CustomIntegrationProperties.IndexOf(nv);
+            if (ms_index < 0)
+            {
+                return null;
+            }
+
+            return CustomIntegrationProperties[ms_index];
+        }
+
 
         /// <summary>
         /// Determines whether a build should run.  A build should run if there
@@ -612,6 +662,19 @@ namespace ThoughtWorks.CruiseControl.Core
                 if (!string.IsNullOrEmpty(LastChangeNumber)) fullProps["LastChangeNumber"] = LastChangeNumber;
 
                 if (IntegrationRequest != null) fullProps[IntegrationPropertyNames.CCNetRequestSource] = IntegrationRequest.Source;
+
+
+
+                if (this.CustomIntegrationProperties != null)
+                {
+                    // add the custom integration properties to the to the normal ones
+                    // these must always be passed as last, because the integration properties of CCNet have priority
+                    foreach (NameValuePair nv in this.CustomIntegrationProperties)
+                    {
+                        fullProps[nv.Name] = nv.Value;
+                    }
+                }
+
                 return fullProps;
             }
         }
@@ -628,10 +691,7 @@ namespace ThoughtWorks.CruiseControl.Core
             if (other == null)
                 return false;
 
-            return ProjectName == other.ProjectName &&
-                   Status == other.Status &&
-                   Label == other.Label &&
-                   StartTime == other.StartTime;
+            return string.Equals(EqualsCompareValue, other.EqualsCompareValue);
         }
 
         /// <summary>
@@ -641,8 +701,28 @@ namespace ThoughtWorks.CruiseControl.Core
         /// <remarks></remarks>
         public override int GetHashCode()
         {
-            return (ProjectName + Label + StartTime.Ticks).GetHashCode();
+            return EqualsCompareValue.GetHashCode();
         }
+
+
+
+        string equalsCompareValue;
+
+        /// <summary>
+        /// Updates equalsCompareValue so the GetHashCode and Equals function do not have to compute the value on each call
+        /// Value consists of : ProjectName + Label + StartTime.Ticks
+        /// </summary>
+        private void UpdateEqualsCompareValue()
+        {
+            equalsCompareValue = ProjectName + Label + StartTime.Ticks;
+        }
+
+
+        internal string EqualsCompareValue
+        {
+            get { return equalsCompareValue; }
+        }
+
 
         /// <summary>
         /// Toes the string.	
@@ -651,7 +731,7 @@ namespace ThoughtWorks.CruiseControl.Core
         /// <remarks></remarks>
         public override string ToString()
         {
-            return string.Format(System.Globalization.CultureInfo.CurrentCulture,"Project: {0}, Status: {1}, Label: {2}, StartTime: {3}", ProjectName, Status, Label, StartTime);
+            return string.Format(System.Globalization.CultureInfo.CurrentCulture, "Project: {0}, Status: {1}, Label: {2}, StartTime: {3}", ProjectName, Status, Label, StartTime);
         }
 
         /// <summary>
@@ -712,8 +792,9 @@ namespace ThoughtWorks.CruiseControl.Core
             clone.projectUrl = projectUrl;
             clone.buildLogDirectory = buildLogDirectory;
             clone.parameters = new List<NameValuePair>(parameters);
-            clone.label = label;
+            clone.Label = label;
             clone.modifications = (Modification[])modifications.Clone();
+            clone.status = status;
             return clone;
         }
         #endregion

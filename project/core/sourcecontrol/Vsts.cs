@@ -33,10 +33,13 @@ namespace ThoughtWorks.CruiseControl.Core.Sourcecontrol
     public class Vsts : ProcessSourceControl, IConfigurationValidation
     {
         #region Constants
-
+        private const string VS2013_32_REGISTRY_PATH = @"Software\Microsoft\VisualStudio\12.0";
+        private const string VS2012_32_REGISTRY_PATH = @"Software\Microsoft\VisualStudio\11.0";
         private const string VS2010_32_REGISTRY_PATH = @"Software\Microsoft\VisualStudio\10.0";
         private const string VS2008_32_REGISTRY_PATH = @"Software\Microsoft\VisualStudio\9.0";
         private const string VS2005_32_REGISTRY_PATH = @"Software\Microsoft\VisualStudio\8.0";
+        private const string VS2013_64_REGISTRY_PATH = @"Software\Wow6432Node\Microsoft\VisualStudio\12.0";
+        private const string VS2012_64_REGISTRY_PATH = @"Software\Wow6432Node\Microsoft\VisualStudio\11.0";
         private const string VS2010_64_REGISTRY_PATH = @"Software\Wow6432Node\Microsoft\VisualStudio\10.0";
         private const string VS2008_64_REGISTRY_PATH = @"Software\Wow6432Node\Microsoft\VisualStudio\9.0";
         private const string VS2005_64_REGISTRY_PATH = @"Software\Wow6432Node\Microsoft\VisualStudio\8.0";
@@ -583,9 +586,20 @@ namespace ThoughtWorks.CruiseControl.Core.Sourcecontrol
             return processInfo;
         }
 
+
         private string ReadTfFromRegistry()
         {
-            string registryValue = registry.GetLocalMachineSubKeyValue(VS2010_64_REGISTRY_PATH, VS_REGISTRY_KEY);
+            string registryValue = registry.GetLocalMachineSubKeyValue(VS2013_64_REGISTRY_PATH, VS_REGISTRY_KEY);
+
+            if (registryValue == null)
+            {
+                registryValue = registry.GetLocalMachineSubKeyValue(VS2012_64_REGISTRY_PATH, VS_REGISTRY_KEY);
+            }
+
+            if (registryValue == null)
+            {
+                registryValue = registry.GetLocalMachineSubKeyValue(VS2010_64_REGISTRY_PATH, VS_REGISTRY_KEY);
+            }
 
             if (registryValue == null)
             {
@@ -595,6 +609,16 @@ namespace ThoughtWorks.CruiseControl.Core.Sourcecontrol
             if (registryValue == null)
             {
                 registryValue = registry.GetLocalMachineSubKeyValue(VS2005_64_REGISTRY_PATH, VS_REGISTRY_KEY);
+            }
+
+            if (registryValue == null)
+            {
+                registryValue = registry.GetLocalMachineSubKeyValue(VS2013_32_REGISTRY_PATH, VS_REGISTRY_KEY);
+            }
+
+            if (registryValue == null)
+            {
+                registryValue = registry.GetLocalMachineSubKeyValue(VS2012_32_REGISTRY_PATH, VS_REGISTRY_KEY);
             }
 
             if (registryValue == null)
@@ -660,7 +684,7 @@ namespace ThoughtWorks.CruiseControl.Core.Sourcecontrol
                 if (workspaceName.Contains(s))
                 {
                     AllOk = false;
-                    ErrorInfo += System.Environment.NewLine + "can not contain character " + s;                    
+                    ErrorInfo += System.Environment.NewLine + "can not contain character " + s;
                 }
             }
 

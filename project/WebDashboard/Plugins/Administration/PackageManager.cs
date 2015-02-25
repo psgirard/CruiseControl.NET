@@ -101,7 +101,11 @@ namespace ThoughtWorks.CruiseControl.WebDashboard.Plugins.Administration
                 fileName);
             FileInfo packageDetails = new FileInfo(packagePath);
             List<PackageImportEventArgs> events = null;
-            if (packageDetails.Exists)
+            if (!packageDetails.Exists)
+            {
+                throw new Exception(string.Format("Wanted package {0} not found in : {1}", fileName, ProgramDataFolder.MapPath("Packages")));
+            }
+            else
             {
                 // Load the package and install it
                 events = new List<PackageImportEventArgs>();
@@ -310,6 +314,7 @@ namespace ThoughtWorks.CruiseControl.WebDashboard.Plugins.Administration
                     packageElement.SetAttribute("name", manifest.Name);
                     packageElement.SetAttribute("description", manifest.Description);
                     packageElement.SetAttribute("type", manifest.Type.ToString());
+                    packageElement.SetAttribute("group", manifest.Group);
                     packageElement.SetAttribute("file", manifest.FileName);
                     packageList.DocumentElement.AppendChild(packageElement);
                 }
